@@ -10,6 +10,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "reinstall": "rm -rf ./node_modules && rm -rf pnpm-lock.yaml && pnpm install",
     "lint": "next lint"
   },
   "dependencies": {

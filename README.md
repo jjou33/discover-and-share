@@ -54,6 +54,20 @@ pnpm dev
 pnpm build
 ```
 
+## VSCODE 설정
+---
+
+![image](https://github.com/jjou33/discover-and-share/assets/56063287/398aad0a-2d26-4f03-9131-8088518cc7a2)
+
+![image](https://github.com/jjou33/discover-and-share/assets/56063287/7062e40a-e6b6-4459-bbbd-7f58af5c0a67)
+
+위 `Warning` 제거를 위해 아래 작업 필요
+
+`ctrl + shift + p` 입력 후 `Terminal Setting` 진입 후 아래와 같이 검색 후 `CSS:Lint` 값을 `ignore`로 변경
+
+![image](https://github.com/jjou33/discover-and-share/assets/56063287/e8732cca-9f50-45fe-b710-4845406ec177)
+
+
 ## Browser support
 
 본 프로젝트 개발 브라우저 환경은 `Chrome 80+` 이상 사용을 권장합니다.
