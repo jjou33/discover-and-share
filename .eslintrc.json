@@ -10,26 +10,57 @@
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 2020,
+    "ecmaVersion": "latest",
     "sourceType": "module",
     "project": "tsconfig.json",
     "parser": "@typescript-eslint/parser",
     "createDefaultProgram": true
   },
   "extends": [
-    "next/core-web-vitals",
-    "prettier",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    "next",
+    "next/core-web-vitals",
+    "prettier"
   ],
   "plugins": ["react", "@typescript-eslint", "prettier", "simple-import-sort"],
     "rules": {
-    "react/react-in-jsx-scope": "off", // import React from 'react' 안해도 되게 만들어줌.
-    "simple-import-sort/imports": "error", // import 구문 순서 엉망이면 에러 냄.
-    "simple-import-sort/exports": "error", // export 구문도 순서 엉망이면 에러 냄.
+    "react/react-in-jsx-scope": "off", // import React from "react" 안해도 되게 만들어줌.
     "@typescript-eslint/no-unused-vars": "error", // 안 쓰는 변수 그대로 두면 에러 냄.
     "@typescript-eslint/no-explicit-any": "error", // any 쓰면 에러 냄.
+    "simple-import-sort/exports": "warn",
+    "simple-import-sort/imports": [
+      "warn",
+      {
+        "groups": [
+          // ext library & side effect imports
+          ["^@?\\w", "^\\u0000"],
+          ["^.+\\.s?css$"],
+          // Lib and hooks
+          ["^@/lib", "^@/hooks"],
+          // static data
+          ["^@/data"],
+          // components
+          ["^@/components", "^@/container"],
+          // Other imports
+          ["^@/"],
+          // relative paths up until 3 level
+          [
+            "^\\./?$",
+            "^\\.(?!/?$)",
+            "^\\.\\./?$",
+            "^\\.\\.(?!/?$)",
+            "^\\.\\./\\.\\./?$",
+            "^\\.\\./\\.\\.(?!/?$)",
+            "^\\.\\./\\.\\./\\.\\./?$",
+            "^\\.\\./\\.\\./\\.\\.(?!/?$)"
+          ],
+          ["^@/types"],
+          // other that didnt fit in
+          ["^"]
+        ]
+      }
+    ],
     "prettier/prettier": [
       "error",
       {
@@ -42,7 +73,8 @@
         "bracketSpacing": true,
         "quoteProps": "as-needed",
         "arrowParens": "avoid",
-        "endOfLine": "auto"
+        "endOfLine": "auto",
+        "plugins": ["prettier-plugin-tailwindcss"]
       }
     ]
   }
