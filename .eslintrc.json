@@ -20,7 +20,6 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "next",
-    "next/core-web-vitals",
     "prettier"
   ],
   "plugins": ["react", "@typescript-eslint", "prettier", "simple-import-sort"],
