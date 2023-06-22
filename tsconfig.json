@@ -29,7 +29,10 @@
         "src/app/*"
       ],
       "#/*": [
-        "src/pages/*"
+        "src/assets/*"
+      ],
+      "~/*": [
+        "src/components/*"
       ]
     }
   },
