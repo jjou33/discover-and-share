@@ -1,5 +1,9 @@
 import { Metadata } from 'next'
 
+import '../styles/globals.css'
+
+import Footer from '~/common/Footer/page'
+import Header from '~/common/Header/page'
 import Home from '~/organisms/Home/pages'
 export const metadata: Metadata = {
   title: 'discover',
@@ -7,7 +11,13 @@ export const metadata: Metadata = {
 }
 
 const RootPage = () => {
-  return <Home />
+  return (
+    <>
+      <Header />
+      <Home />
+      <Footer />
+    </>
+  )
 }
 
 export default RootPage

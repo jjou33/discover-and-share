@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES2019",
     "lib": [
       "dom",
       "dom.iterable",
@@ -33,6 +33,9 @@
       ],
       "~/*": [
         "src/components/*"
+      ],
+      "$/*": [
+        "src/styles/*"
       ]
     }
   },
@@ -40,7 +43,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "build/types/**/*.ts"
+    ".next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"
