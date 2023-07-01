@@ -1,12 +1,13 @@
+'use client'
+
+import * as S from './styles'
+
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 py-4">
-      <div className="container mx-auto px-4">
-        <p className="text-center text-gray-300">
-          &copy; 2023 My Website. All rights reserved.
-        </p>
-      </div>
-    </footer>
+    <S.FooterWrapper>
+      Thank You for Visiting My Blog, Have a Good Day 😆
+      <br />© 2023 Discover & Shared, Powered By Next.
+    </S.FooterWrapper>
   )
 }
 

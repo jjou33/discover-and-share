@@ -35,7 +35,7 @@
         "src/components/*"
       ],
       "$/*": [
-        "src/styles/*"
+        "src/lib/*"
       ]
     }
   },

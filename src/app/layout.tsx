@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 
 import '../styles/globals.css'
 
+import { RootStyleRegistry } from '$/RootStyleRegistry'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({
@@ -12,7 +13,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body id="__next" className={inter.className}>
-        {children}
+        <RootStyleRegistry>{children}</RootStyleRegistry>
       </body>
     </html>
   )

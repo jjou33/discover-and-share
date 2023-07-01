@@ -2,117 +2,120 @@
 
 import { Grid } from '@mui/material'
 
-import Card from '~/atoms/Card/page'
+import * as S from './styles'
 
+import Card from '~/atoms/Card/page'
+import Footer from '~/common/Footer/page'
+import Header from '~/common/Header/page'
 const Home = () => {
   return (
-    <>
-      <main className="mt-10 flex min-h-screen flex-col items-center justify-between">
-        <div className="mt-24 flex h-auto items-center justify-center">
-          <Grid container height="100vh" spacing={1}>
-            <Grid
-              item
-              xs={12}
-              sm={6}
-              md={4}
-              container
-              alignItems="center"
-              justifyContent="center"
-            >
-              <Card />
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={6}
-              md={4}
-              container
-              alignItems="center"
-              justifyContent="center"
-            >
-              <Card />
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={6}
-              md={4}
-              container
-              alignItems="center"
-              justifyContent="center"
-            >
-              <Card />
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={6}
-              md={4}
-              container
-              alignItems="center"
-              justifyContent="center"
-            >
-              <Card />
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={6}
-              md={4}
-              container
-              alignItems="center"
-              justifyContent="center"
-            >
-              <Card />
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={6}
-              md={4}
-              container
-              alignItems="center"
-              justifyContent="center"
-            >
-              <Card />
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={6}
-              md={4}
-              container
-              alignItems="center"
-              justifyContent="center"
-            >
-              <Card />
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={6}
-              md={4}
-              container
-              alignItems="center"
-              justifyContent="center"
-            >
-              <Card />
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={6}
-              md={4}
-              container
-              alignItems="center"
-              justifyContent="center"
-            >
-              <Card />
-            </Grid>
+    <S.Container>
+      <Header />
+      <S.MainContainer>
+        <Grid container height="100%" spacing={1}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={4}
+            container
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Card />
           </Grid>
-        </div>
-      </main>
-    </>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={4}
+            container
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Card />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={4}
+            container
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Card />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={4}
+            container
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Card />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={4}
+            container
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Card />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={4}
+            container
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Card />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={4}
+            container
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Card />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={4}
+            container
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Card />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={4}
+            container
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Card />
+          </Grid>
+        </Grid>
+      </S.MainContainer>
+      <Footer />
+    </S.Container>
   )
 }
 
