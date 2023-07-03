@@ -12,7 +12,7 @@ import {
 const Header = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar className="flex h-20 bg-gray-900 py-2 align-middle text-white">
+      <AppBar>
         <Toolbar>
           <IconButton
             size="large"
